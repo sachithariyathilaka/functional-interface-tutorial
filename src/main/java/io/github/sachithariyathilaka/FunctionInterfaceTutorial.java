@@ -1,29 +1,27 @@
-package com.bytegen;
+package io.github.sachithariyathilaka;
+
+import io.github.sachithariyathilaka.interfaces.ScenarioOne;
+import io.github.sachithariyathilaka.interfaces.ScenarioThree;
+import io.github.sachithariyathilaka.interfaces.ScenarioTwo;
 
 /**
- * @class App
- * @description This is the main class for the functional interface tutorial.
+ * This is the main class for the functional interface tutorial.
  *
- * @author Sachith Ariyathilaka
+ * @author  Sachith Ariyathilaka
  * @version 1.0.0
- * @date 2024/03/09
+ * @since   2024/03/09
  */
-public class App {
+public class FunctionInterfaceTutorial {
 
-    /**
-     * @method main
-     * @description Java main method.
-     */
     public static void main( String[] args ) {
-        App app = new App();
-        app.getScenarioOne();
-        app.getScenarioTwo();
-        app.getScenarioThree();;
+        FunctionInterfaceTutorial functionInterfaceTutorial = new FunctionInterfaceTutorial();
+        functionInterfaceTutorial.getScenarioOne();
+        functionInterfaceTutorial.getScenarioTwo();
+        functionInterfaceTutorial.getScenarioThree();;
     }
 
     /**
-     * @method getScenarioOne
-     * @description This method used to execute scenario one functional interface.
+     * This method used to execute scenario one functional interface.
      */
     public void getScenarioOne() {
         ScenarioOne scenarioOne = new ScenarioOne() {
@@ -37,8 +35,7 @@ public class App {
     }
 
     /**
-     * @method getScenarioTwo
-     * @description This method used to execute scenario two functional interface.
+     * This method used to execute scenario two functional interface.
      */
     public void getScenarioTwo() {
         ScenarioTwo scenarioTwo = (value1, value2) -> System.out.println("Calculated value is: " + (value1 - value2));
@@ -47,8 +44,7 @@ public class App {
     }
 
     /**
-     * @method getScenarioThree
-     * @description This method used to execute scenario three functional interface.
+     * This method used to execute scenario three functional interface.
      */
     public void getScenarioThree() {
         ScenarioThree scenarioThree = new ScenarioThree() {
