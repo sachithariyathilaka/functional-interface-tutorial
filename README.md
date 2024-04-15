@@ -13,6 +13,6 @@ Java maven tutorial project for functional interfaces
 
   * Release: 1.0.0
   * Date: 2024/03/24
-  * Module:  Functional Interface Tutorial
+  * Module: Functional Interface Tutorial
   * Changes
     * Functional interface scenario functionalities implemented.
